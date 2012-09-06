@@ -1,5 +1,5 @@
 
-<h1><%=t("controllers.names.deploy.index") %></h1>
+<h1><%=t("controllers.names.record.index") %></h1>
 <p><%= link_to t("buttons.new"), {:controller => 'records',
                               :action => 'new'} %></p>
 <%= form_tag :search_records, method: :get do %>
@@ -9,10 +9,10 @@
 <% if @records.present? %>
     <table class="list">
       <tr>
-        <th><%=t("activerecord.attributes.deploy.instance_name") %></th>
-        <th><%=t("activerecord.attributes.deploy.deploy_date") %></th>
-        <th><%=t("activerecord.attributes.deploy.commit_hash") %></th>
-        <th><%=t("activerecord.attributes.deploy.remarks") %></th>
+        <th><%=t("activerecord.attributes.record.instance_name") %></th>
+        <th><%=t("activerecord.attributes.record.deploy_date") %></th>
+        <th><%=t("activerecord.attributes.record.commit_hash") %></th>
+        <th><%=t("activerecord.attributes.record.remarks") %></th>
         <th></th>
       </tr>
       <% @records.each do |record| %>

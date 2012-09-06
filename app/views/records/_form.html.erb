@@ -1,18 +1,18 @@
 <table class="attr">
   <tr>
-    <th><%= form.label :name, t("activerecord.attributes.deploy.instance_name") %></th>
+    <th><%= form.label :name, t("activerecord.attributes.record.instance_name") %></th>
     <td><%= form.text_field :name, size:50 %></td>
   </tr>
   <tr>
-    <th><%= form.label :deploy_date, t("activerecord.attributes.deploy.deploy_date") %></th>
+    <th><%= form.label :deploy_date, t("activerecord.attributes.record.deploy_date") %></th>
     <td><%= form.date_select :deploy_date %></td>
   </tr>
   <tr>
-    <th><%= form.label :commit_hash, t("activerecord.attributes.deploy.commit_hash") %></th>
+    <th><%= form.label :commit_hash, t("activerecord.attributes.record.commit_hash") %></th>
     <td><%= form.text_field :commit_hash, size:50 %></td>
   </tr>
   <tr>
-    <th><%= form.label :remarks, t("activerecord.attributes.deploy.remarks") %></th>
+    <th><%= form.label :remarks, t("activerecord.attributes.record.remarks") %></th>
     <td><%= form.text_area :remarks, size:8, clos: 40, rows:6 %></td>
   </tr>
 </table>

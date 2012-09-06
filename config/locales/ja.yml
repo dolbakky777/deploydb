@@ -204,16 +204,16 @@ ja:
 
   controllers:
     names:
-      deploy:
+      record:
         index: デプロイ一覧
         show: デプロイ詳細
         new: デプロイ登録
         edit: デプロイ編集
   activerecord:
     models:
-      deploy: デプロイ
+      record: デプロイ
     attributes:
-      deploy:
+      record:
         instance_name : インスタンス名
         deploy_date : デプロイ日
         commit_hash : コミットHash

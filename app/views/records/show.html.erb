@@ -1,22 +1,22 @@
-<h1><%=t("controllers.names.deploy.show") %></h1>
+<h1><%=t("controllers.names.record.show") %></h1>
 
 <p><%= link_to t("buttons.edit"), [:edit, @record] %></p>
 
 <table class="attr">
   <tr>
-    <th width="150"><%=t("activerecord.attributes.deploy.instance_name") %></th>
+    <th width="150"><%=t("activerecord.attributes.record.instance_name") %></th>
     <td><%= @record.name %></td>
   </tr>
   <tr>
-    <th width="150"><%=t("activerecord.attributes.deploy.deploy_date") %></th>
+    <th width="150"><%=t("activerecord.attributes.record.deploy_date") %></th>
     <td><%= @record.deploy_date %></td>
   </tr>
   <tr>
-    <th width="150"><%=t("activerecord.attributes.deploy.commit_hash") %></th>
+    <th width="150"><%=t("activerecord.attributes.record.commit_hash") %></th>
     <td><%= @record.commit_hash %></td>
   </tr>
   <tr>
-    <th width="150"><%=t("activerecord.attributes.deploy.remarks") %></th>
+    <th width="150"><%=t("activerecord.attributes.record.remarks") %></th>
     <td><%= @record.remarks %></td>
   </tr>
 </table>
