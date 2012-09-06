@@ -2,7 +2,7 @@
 
 <%= form_for @record do |form| %>
     <%= render "form", form: form %>
-    <p><%= form.submit %></p>
+    <p><%= form.submit t("buttons.submit2") %></p>
 <% end %>
 
-<p><%= link_to "デプロイ詳細に戻る", @record %></p>
+<p><%= link_to t("messages.record.edit.message1"), @record %></p>

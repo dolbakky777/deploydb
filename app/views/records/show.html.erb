@@ -20,5 +20,5 @@
     <td><%= @record.remarks %></td>
   </tr>
 </table>
-<p><%= link_to "デプロイ一覧に戻る", {:controller => 'records',
+<p><%= link_to t("messages.record.show.message1"), {:controller => 'records',
                                          :action => 'search'} %></p>

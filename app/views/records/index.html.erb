@@ -23,11 +23,11 @@
             <td><%= record.remarks  %></td>
             <td>
               <%=  link_to t("buttons.edit"), [:edit, record] %> |
-              <%= link_to t("buttons.delete"), record, method: :delete, confirm: "本当に削除しますか？" %>
+              <%= link_to t("buttons.delete"), record, method: :delete, confirm: t("messages.record.index.message1") %>
             </td>
           </tr>
       <% end %>
     </table>
 <% else %>
-    <p>デプロイ情報がありません。</p>
+    <p><%= t("messages.record.index.message2") %></p>
 <% end %>
