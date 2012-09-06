@@ -1,4 +1,8 @@
 class Record < ActiveRecord::Base
+
+  validates :name, presence: true
+  validates :commit_hash, presence: true
+
   attr_accessible :name
   attr_accessible :deploy_date
   attr_accessible :commit_hash
