@@ -1,0 +1,8 @@
+<h1><%=t("controllers.names.deploy.new") %></h1>
+
+<%= form_for @record do |form| %>
+<%= render "form", form: form %>
+<p><%= form.submit %></p>
+<% end %>
+<p><%= link_to "デプロイ一覧に戻る", {:controller => 'records',
+                             :action => 'search'} %></p>

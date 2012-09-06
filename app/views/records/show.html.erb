@@ -1,0 +1,24 @@
+<h1><%=t("controllers.names.deploy.show") %></h1>
+
+<p><%= link_to t("buttons.edit"), [:edit, @record] %></p>
+
+<table class="attr">
+  <tr>
+    <th width="150"><%=t("activerecord.attributes.deploy.instance_name") %></th>
+    <td><%= @record.name %></td>
+  </tr>
+  <tr>
+    <th width="150"><%=t("activerecord.attributes.deploy.deploy_date") %></th>
+    <td><%= @record.deploy_date %></td>
+  </tr>
+  <tr>
+    <th width="150"><%=t("activerecord.attributes.deploy.commit_hash") %></th>
+    <td><%= @record.commit_hash %></td>
+  </tr>
+  <tr>
+    <th width="150"><%=t("activerecord.attributes.deploy.remarks") %></th>
+    <td><%= @record.remarks %></td>
+  </tr>
+</table>
+<p><%= link_to "デプロイ一覧に戻る", {:controller => 'records',
+                                         :action => 'search'} %></p>
