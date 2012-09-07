@@ -3,10 +3,12 @@
 class RecordsController < ApplicationController
   def index
     @records = Record.search(params[:q])
+    @records = Record.order('created_at DESC').page params[:page]
   end
 
   def search
     @records = Record.search(params[:q])
+    @records = Record.order('created_at DESC').page params[:page]
     render "index"
   end
 

@@ -8,6 +8,9 @@ class Record < ActiveRecord::Base
   attr_accessible :commit_hash
   attr_accessible :remarks
 
+  default_scope :order => 'created_at DESC'
+  paginates_per 3
+
   class << self
     def search(query)
       rel = order("deploy_date desc, id desc")
