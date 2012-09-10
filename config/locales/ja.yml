@@ -234,5 +234,13 @@ ja:
       edit:
         message1: デプロイ一覧に戻る
 
+  views:
+    pagination:
+      previous: "« 前ページ"
+      next: "次ページ »"
+      first: "最初へ"
+      last: "最後へ"
+      truncate: "..."
+
     errors:
       <<: *errors
