@@ -13,6 +13,10 @@
     <td><%= form.text_field :commit_hash, size:50 %></td>
   </tr>
   <tr>
+    <th><%= form.label :brunch, t("activerecord.attributes.record.brunch") %></th>
+    <td><%= form.text_field :brunch %></td>
+  </tr>
+  <tr>
     <th><%= form.label :remarks, t("activerecord.attributes.record.remarks") %></th>
     <td><%= form.text_area :remarks, size:8, clos: 40, rows:6 %></td>
   </tr>

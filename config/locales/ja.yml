@@ -220,6 +220,7 @@ ja:
         instance_name: インスタンス名
         deploy_date: デプロイ日
         commit_hash: コミットHash
+        brunch: ブランチ名
         remarks: 備考
 
   messages:

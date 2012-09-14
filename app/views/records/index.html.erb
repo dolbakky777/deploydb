@@ -12,6 +12,7 @@
         <th><%=t("activerecord.attributes.record.instance_name") %></th>
         <th><%=t("activerecord.attributes.record.deploy_date") %></th>
         <th><%=t("activerecord.attributes.record.commit_hash") %></th>
+        <th><%=t("activerecord.attributes.record.brunch") %></th>
         <th><%=t("activerecord.attributes.record.remarks") %></th>
         <th></th>
       </tr>
@@ -19,8 +20,9 @@
           <tr>
             <td><%= link_to record.name, record %></td>
             <td><%= record.deploy_date %></td>
-            <td><%= record.commit_hash  %></td>
-            <td><%= record.remarks  %></td>
+            <td><%= record.commit_hash %></td>
+            <td><%= record.brunch %></td>
+            <td><%= record.remarks %></td>
             <td>
               <%=  link_to t("buttons.edit"), [:edit, record] %> |
               <%= link_to t("buttons.delete"), record, method: :delete, confirm: t("messages.record.index.message1") %>

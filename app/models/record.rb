@@ -6,6 +6,7 @@ class Record < ActiveRecord::Base
   attr_accessible :name
   attr_accessible :deploy_date
   attr_accessible :commit_hash
+  attr_accessible :brunch
   attr_accessible :remarks
 
   default_scope :order => 'created_at DESC'

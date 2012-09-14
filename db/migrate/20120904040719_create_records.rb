@@ -4,6 +4,7 @@ class CreateRecords < ActiveRecord::Migration
       t.string :name, null: false  #インスタンス名
       t.date :deploy_date, null: false  #デプロイ日
       t.string :commit_hash, null: false  #コミットhash
+      t.string :brunch #ブランチ名
       t.string :remarks  #備考
       t.timestamps
     end
