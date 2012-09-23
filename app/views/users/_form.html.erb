@@ -1,0 +1,15 @@
+<%= render "shared/errors", obj: @user %>
+<table class="attr">
+  <tr>
+    <th><%= form.label :user_id, t("activerecord.attributes.user.user_id") %></th>
+    <td><%= form.text_field  :user_id %></td>
+  </tr>
+  <tr>
+    <th><%= form.label :name, t("activerecord.attributes.user.name") %></th>
+    <td><%= form.text_field  :name %></td>
+  </tr>
+  <tr>
+    <th><%= form.label :password, t("activerecord.attributes.user.password") %></th>
+    <td><%= form.text_field  :password %></td>
+  </tr>
+</table>

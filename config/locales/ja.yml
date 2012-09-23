@@ -211,10 +211,15 @@ ja:
         show: デプロイ詳細
         new: デプロイ登録
         edit: デプロイ編集
-
+      user:
+        index: ユーザー一覧
+        show: ユーザー詳細
+        new: ユーザー登録
+        edit: ユーザー編集
   activerecord:
     models:
       record: デプロイ
+      user: ユーザー
     attributes:
       record:
         instance_name: インスタンス名
@@ -222,7 +227,10 @@ ja:
         commit_hash: コミットHash
         brunch: ブランチ名
         remarks: 備考
-
+      user:
+        user_id: ID
+        name: 名前
+        password: パスワード
   messages:
     record:
       index:
@@ -234,7 +242,16 @@ ja:
         message1: デプロイ一覧に戻る
       edit:
         message1: デプロイ一覧に戻る
-
+    user:
+      index:
+        message1: 本当に削除しますか？
+        message2: ユーザー情報がありません。
+      show:
+        message1: ユーザー一覧に戻る
+      new:
+        message1: ユーザー一覧に戻る
+      edit:
+        message1: ユーザー一覧に戻る
   views:
     pagination:
       previous: "« 前ページ"

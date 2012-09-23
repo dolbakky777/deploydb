@@ -1,0 +1,20 @@
+<h1><%=t("controllers.names.user.show") %></h1>
+
+<p><%= link_to t("buttons.edit"), [:edit, @user] %></p>
+
+<table class="attr">
+  <tr>
+    <th width="150"><%=t("activerecord.attributes.user.user_id") %></th>
+    <td><%= @user.user_id %></td>
+  </tr>
+  <tr>
+    <th width="150"><%=t("activerecord.attributes.user.name") %></th>
+    <td><%= @user.name %></td>
+  </tr>
+  <tr>
+    <th width="150"><%=t("activerecord.attributes.user.password") %></th>
+    <td><%= @user.password %></td>
+  </tr>
+</table>
+<p><%= link_to t("messages.user.show.message1"), {:controller => 'users',
+                                                  :action => 'index'} %></p>
